@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "rmse": 18.99045202375147,
+    "mae": 13.374714851379395,
+    "config": {
+      "hidden_layers": 2,
+      "units": 64,
+      "dropout": 0.2,
+      "activation": "relu",
+      "optimizer": "adam",
+      "lr": 0.001,
+      "batch_size": 32
+    }
+  },
+  "bo": {
+    "rmse": 18.83289050816624,
+    "mae": 12.274444580078125,
+    "config": {
+      "hidden_layers": 3,
+      "units": 238,
+      "dropout": 0.0054419541809361816,
+      "activation": "softsign",
+      "optimizer": "rmsprop",
+      "lr": 0.009778564438588266,
+      "batch_size": 128
+    }
+  },
+  "hyperband": {
+    "rmse": 19.021051088767003,
+    "mae": 13.535202980041504,
+    "config": {
+      "hidden_layers": 1,
+      "units": 192,
+      "dropout": 0.45,
+      "activation": "selu",
+      "optimizer": "nadam",
+      "lr": 0.0018737848019708316,
+      "batch_size": 208
+    }
+  },
+  "bohb": {
+    "rmse": 18.734821330171194,
+    "mae": 12.41580581665039,
+    "config": {
+      "hidden_layers": 3,
+      "units": 147,
+      "dropout": 0.4488584083519,
+      "activation": "tanh",
+      "optimizer": "adam",
+      "lr": 0.0025169955471,
+      "batch_size": 16
+    }
+  }
+}
