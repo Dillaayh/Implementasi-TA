@@ -1,0 +1,54 @@
+{
+  "baseline": {
+    "rmse": 18.92560185995993,
+    "mae": 13.348504066467285,
+    "config": {
+      "hidden_layers": 2,
+      "units": 64,
+      "dropout": 0.2,
+      "activation": "relu",
+      "optimizer": "adam",
+      "lr": 0.001,
+      "batch_size": 32
+    }
+  },
+  "bo": {
+    "rmse": 19.004585114416304,
+    "mae": 13.25203800201416,
+    "config": {
+      "hidden_layers": 4,
+      "units": 43,
+      "dropout": 0.27162624417340764,
+      "activation": "linear",
+      "optimizer": "adagrad",
+      "lr": 0.001419739416819751,
+      "batch_size": 64
+    }
+  },
+  "hyperband": {
+    "rmse": 19.222717768774757,
+    "mae": 14.135429382324219,
+    "config": {
+      "hidden_layers": 5,
+      "units": 331,
+      "dropout": 0.15000000000000002,
+      "activation": "swish",
+      "optimizer": "adam",
+      "lr": 0.0004231890726974646,
+      "batch_size": 128
+    }
+  },
+  "bohb": {
+    "rmse": 18.875249797860707,
+    "mae": 12.815634727478027,
+    "config": {
+      "hidden_layers": 4,
+      "units": 389,
+      "dropout": 0.0426774069631,
+      "activation": "sigmoid",
+      "optimizer": "adam",
+      "lr": 0.0013160874445,
+      "batch_size": 16
+    }
+  }
+}
